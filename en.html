@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMSL | Intelligent Multiphysics Systems Laboratory</title>
+  <meta name="description" content="Intelligent Multiphysics Systems Laboratory (IMSL), Department of Mechanical, Robotics and Energy Engineering, Dongguk University. We design energy conversion devices such as SOFC/SOEC with multiphysics CFD and AI.">
+  <link rel="alternate" hreflang="ko" href="index.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/img/logo_mark.png" alt="IMSL logo">
+      <span>Dongguk University<small>Seoul, Korea</small></span>
+    </a>
+    <div class="head-right">
+      <nav class="main">
+        <ul onclick="this.parentNode.classList.remove('open')">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#pi">PI</a></li>
+          <li><a href="assets/cv/CV_YonggyunBae_EN.pdf" target="_blank" rel="noopener">CV</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#join">Join Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang" aria-label="Language">
+        <a href="index.html" lang="ko" hreflang="ko">한국어</a>
+        <a href="en.html" class="on" lang="en" hreflang="en" aria-current="true">English</a>
+      </div>
+      <button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('nav.main').classList.toggle('open')">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Dongguk University | Mechanical, Robotics and Energy Engineering</div>
+    <h1>Intelligent Multiphysics<br>Systems Laboratory</h1>
+    <div class="ko">IMSL, Dongguk University, Seoul</div>
+    <p class="tagline">Integrate Physics. Empower Design.<br>
+      Multiphysics CFD for Energy Systems: from fundamental modeling to AI-driven design</p>
+    <div class="btns">
+      <a class="btn primary" href="#research">Our Research</a>
+      <a class="btn ghost" href="#join">Join Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">About IMSL</div>
+      <h2>Understand the physics, model it quantitatively, and turn it into design</h2>
+      <p>Energy conversion devices couple reaction, heat, flow, and electricity at the same time. Looking at the reaction alone or the flow alone cannot predict how a real device performs.
+        IMSL resolves these phenomena together with multiphysics CFD and combines it with AI to design next-generation hydrogen and zero-carbon power devices such as SOFC/SOEC stacks.</p>
+    </div>
+
+    <p class="quote">"Understand the Fundamental Physics, Model it Quantitatively, and Translate it into Engineering Design"</p>
+
+    <div class="flow">
+      <div class="step">
+        <h3>Physics understanding</h3>
+        <ul><li>Governing equations</li><li>Mass/species, momentum</li><li>Energy, reaction</li></ul>
+      </div>
+      <div class="step">
+        <h3>Quantitative CFD modeling</h3>
+        <ul><li>CAD, computational domain</li><li>Meshing</li><li>Initial/boundary conditions</li></ul>
+      </div>
+      <div class="step">
+        <h3>Design &amp; optimization</h3>
+        <ul><li>Velocity, temperature, reaction fields</li><li>Operating maps</li><li>AI-based optimization</li></ul>
+      </div>
+      <div class="step">
+        <h3>Prototyping</h3>
+        <ul><li>Fabrication and experimental validation</li><li>Performance evaluation</li><li>Database</li></ul>
+      </div>
+    </div>
+
+    <div class="physics-tags">
+      <span class="tag">Fluid flow</span><span class="tag">Heat transfer</span><span class="tag">Mass transfer</span>
+      <span class="tag">Surface / thermochemical reaction</span><span class="tag">Electrochemistry</span><span class="tag">AI / surrogate model</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>28</b><span>SCI(E) papers (9 as first/corresponding author)</span></div>
+      <div class="stat"><b>12</b><span>Registered patents (KR 7, US 3, JP 2)</span></div>
+      <div class="stat"><b>4</b><span>Technology transfers</span></div>
+      <div class="stat"><b>4</b><span>Projects as PI</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Research</div>
+      <h2>Research Areas</h2>
+      <p>On a consistent CFD methodology, we have steadily expanded the physics we resolve: from fluid dynamics to surface reactions, electrochemistry, and AI-integrated design.</p>
+    </div>
+
+    <div class="research-grid">
+      <article class="rcard">
+        <div class="img"><img src="assets/img/r_stack_temp.png" alt="Cell-by-cell temperature distribution in an SOFC stack"></div>
+        <div class="body">
+          <div class="num">01</div>
+          <h3>Multiphysics CFD for SOFC/SOEC</h3>
+          <div class="sub">3D multiphysics analysis of solid oxide fuel and electrolysis cells</div>
+          <ul>
+            <li>High-fidelity 3D models coupling mass, momentum, energy, charge, and reaction (Ansys Fluent + UDF)</li>
+            <li>From a single channel (1 cm x 10 cm) to commercial cells (15 x 15 cm<sup>2</sup>) and stacks (15 x 15 x 25 cm<sup>3</sup>)</li>
+            <li>Transient thermo-electrochemical behavior under load change</li>
+            <li>Bipolar plate and manifold design by controlling thermal and flow resistance</li>
+          </ul>
+          <div class="kpi"><span>Temperature deviation -65%</span><span>Flow deviation -60%</span><span>Stack ΔT 66 -> 45 °C</span></div>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="img"><img src="assets/img/r_kinetics.png" alt="Surface reaction pathways of CH4 reforming"></div>
+        <div class="body">
+          <div class="num">02</div>
+          <h3>Reacting Flow &amp; Reaction Kinetics</h3>
+          <div class="sub">Surface reacting-flow analysis and reaction mechanism development</div>
+          <ul>
+            <li>2D flow + surface reaction models of catalytic CH<sub>4</sub> reforming reactors</li>
+            <li>Automated optimization of surface reaction mechanisms with a genetic algorithm (GA)</li>
+            <li>Reaction pathways identified with in-situ XPS, FT-IR, and DFT calculations</li>
+            <li>Experimental validation with GC/MS residual gas analysis (RGA)</li>
+          </ul>
+          <div class="kpi"><span>Micro-kinetics</span><span>Genetic algorithm</span><span>Catalytic reactor</span></div>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="img"><img src="assets/img/r_aicfd.jpg" alt="AI and CFD integrated stack analysis"></div>
+        <div class="body">
+          <div class="num">03</div>
+          <h3>AI-CFD Integrated Design</h3>
+          <div class="sub">Multi-objective optimal design combining AI and CFD</div>
+          <ul>
+            <li>Bayesian optimization and active learning to cut CFD computing cost</li>
+            <li>Gaussian process (GP) multi-objective surrogate models and ε-PAL Pareto search</li>
+            <li>SOEC operating conditions that lower the thermal gradient (ΔT) and raise efficiency (η)</li>
+            <li>Stack design platform based on physics-informed neural networks (PINN)</li>
+          </ul>
+          <div class="kpi"><span>Bayesian optimization</span><span>Surrogate model</span><span>PINN</span></div>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="img"><img src="assets/img/c_1kw.png" alt="1 kW NH3-SOFC stack"></div>
+        <div class="body">
+          <div class="num">04</div>
+          <h3>Stack &amp; System for Green H<sub>2</sub></h3>
+          <div class="sub">NH<sub>3</sub>-SOFC and SOEC stack fabrication and system analysis</div>
+          <ul>
+            <li>In-house 1 kW-class NH<sub>3</sub>-SOFC full stack (40 cells) with long-term operation</li>
+            <li>Pressurized (3 bar) NH<sub>3</sub>-SOFC system co-producing electricity and hydrogen</li>
+            <li>Internal cascade stacks that maximize fuel utilization</li>
+            <li>Next-generation SOEC with steam sweep gas on the air electrode</li>
+          </ul>
+          <div class="kpi"><span>Cell voltage deviation 31 mV</span><span>Total efficiency 88.1%</span><span>Stack FU 93.75%</span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- research evolution -->
+    <div class="timeline">
+      <div class="tl">
+        <div class="yr">2014-2016 | M.S.</div>
+        <h4>Fluid dynamics</h4>
+        <p>Coronary blood flow, cross-flow fan aeroacoustics (uRANS)</p>
+        <img src="assets/img/r_airflow.png" alt="Air flow simulation">
+      </div>
+      <div class="tl">
+        <div class="yr">2017-2021 | Ph.D.</div>
+        <h4>Fluid + Surface reaction</h4>
+        <p>Micro-kinetics, reaction mechanism development</p>
+        <img src="assets/img/r_reactor.png" alt="Reactor simulation">
+      </div>
+      <div class="tl">
+        <div class="yr">2022-2026 | KIMM</div>
+        <h4>+ Electrochemistry</h4>
+        <p>Multiphysics models, SOFC modeling, stack design</p>
+        <img src="assets/img/r_stack_exploded.png" alt="SOFC stack components">
+      </div>
+      <div class="tl">
+        <div class="yr">2026 - | Dongguk</div>
+        <h4>AI-integrated design</h4>
+        <p>Bayesian optimization, surrogate models, CFD/AI integration</p>
+        <img src="assets/img/c_future.png" alt="AI-integrated design">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HIGHLIGHTS ================= -->
+<section id="highlights">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Highlights</div>
+      <h2>Research Highlights</h2>
+      <p>"CFD is a tool for solving real problems." Our work goes beyond analysis to design, fabrication, validation, and technology transfer.</p>
+    </div>
+    <div class="hl-grid">
+      <div class="hl">
+        <div class="img"><img src="assets/img/c_dT.png" alt="Reduced stack temperature difference"></div>
+        <div class="cap"><b>NH<sub>3</sub>-SOFC stack design optimization</b>
+          <p>A dual alternative cross-flow design cut the temperature difference inside the stack from 66 °C to 45 °C (-31.8%). (Energy Conversion and Management, 2023)</p></div>
+      </div>
+      <div class="hl">
+        <div class="img"><img src="assets/img/c_5cell.png" alt="5-cell stack performance comparison"></div>
+        <div class="cap"><b>Improved stacking technology</b>
+          <p>Better bipolar plate roughness, sealing, and an alignment guide reduced the cell-to-cell voltage deviation of a 5-cell stack from 0.36 V to 0.045 V and raised power by 23.3%.</p></div>
+      </div>
+      <div class="hl">
+        <div class="img"><img src="assets/img/c_chamber.png" alt="Pressurized chamber and stack"></div>
+        <div class="cap"><b>Pressurized NH<sub>3</sub>-SOFC for electricity and hydrogen</b>
+          <p>Operated in a 3 bar pressurized chamber, the system co-produces electricity and high-purity hydrogen with a total efficiency of 88.1%.</p></div>
+      </div>
+      <div class="hl">
+        <div class="img"><img src="assets/img/c_aicfd.png" alt="AI-CFD integrated optimization workflow"></div>
+        <div class="cap"><b>AI-CFD optimization of SOEC operation</b>
+          <p>CFD results are added to a GP surrogate through active learning to find the Pareto optimum between ΔT and efficiency. (Applied Thermal Engineering, 2026)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISION ================= -->
+<section id="vision" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Vision</div>
+      <h2>Research Vision</h2>
+      <p>Building on a CFD/AI platform, we will extend our work step by step to safety-driven device design and space resource utilization.</p>
+    </div>
+    <div class="vision">
+      <div class="vcard">
+        <div class="top"><small>Short-term</small><b>CFD + AI Platform</b></div>
+        <img class="img-contain" src="assets/img/r_ai_flow.png" alt="CFD and AI platform">
+        <ul><li>Physics-based AI (PINN)</li><li>Zero-carbon power (NH<sub>3</sub>-SOFC)</li><li>Green hydrogen production (SOEC)</li></ul>
+      </div>
+      <div class="vcard">
+        <div class="top"><small>Mid-term</small><b>Safety-driven Design</b></div>
+        <img class="img-contain" src="assets/img/r_battery.jpg" alt="Battery heat transfer analysis">
+        <ul><li>Safety prediction for SOFC, SOEC, and batteries</li><li>Battery thermal runaway analysis</li><li>AI-based diagnosis with experimental partners</li></ul>
+      </div>
+      <div class="vcard">
+        <div class="top"><small>Long-term</small><b>Space Engineering</b></div>
+        <img src="assets/img/r_mars.jpg" alt="Mars rover">
+        <div class="credit">Image: NASA/JPL-Caltech</div>
+        <ul><li>Mars ISRU (In-Situ Resource Utilization)</li><li>H<sub>2</sub>O/CO<sub>2</sub> co-electrolysis</li><li>On-site fuel/oxidizer (CH<sub>4</sub> + O<sub>2</sub>) production</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PI ================= -->
+<section id="pi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Principal Investigator</div>
+      <h2>Principal Investigator</h2>
+    </div>
+    <div class="pi">
+      <div>
+        <div class="photo"><img src="assets/img/pi.jpg" alt="Prof. Yonggyun Bae"></div>
+        <div class="name"><b>Yonggyun Bae</b><span>Ph.D.</span><span>Assistant Professor, Mechanical, Robotics and Energy Engineering</span></div>
+        <div class="pi-links"><a href="https://scholar.google.com/citations?user=d5M6UBwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><a href="https://orcid.org/0000-0002-4394-3194" target="_blank" rel="noopener">ORCID</a></div>
+        <div class="cv-dl">
+          <a class="btn primary" href="assets/cv/CV_YonggyunBae_EN.pdf" target="_blank" rel="noopener">CV (English)</a>
+          <a class="btn outline" href="assets/cv/CV_YonggyunBae_KO.pdf" target="_blank" rel="noopener">CV (Korean)</a>
+        </div>
+      </div>
+      <div class="cv">
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li>Ph.D., Mechanical Engineering, Yonsei Univ.<span class="y">2021</span>
+              <div class="sub">Advisor: Prof. Jongsup Hong</div></li>
+            <li>M.S., Mechanical Engineering, Korea Univ.<span class="y">2016</span>
+              <div class="sub">Advisor: Prof. Young J. Moon</div></li>
+            <li>B.S., Mechanical Engineering, Korea Univ.<span class="y">2014</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Professional Experience</h3>
+          <ul>
+            <li>Assistant Professor, Dongguk University<span class="y">2026-</span></li>
+            <li>Senior Researcher, Korea Institute of Machinery and Materials (KIMM)<span class="y">2022-2026</span></li>
+            <li>Postdoctoral Researcher, Yonsei Univ.<span class="y">2021-2022</span></li>
+            <li>Research Assistant, KIST<span class="y">2016-2018</span></li>
+            <li>Expert Advisory Committee for Renewable Energy, Seoul Metropolitan Government<span class="y">2025-2027</span></li>
+            <li>Planning Advisory Committee for New R&amp;D Projects, KETEP<span class="y">FY2025, FY2026</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Research Projects (P.I.)</h3>
+          <ul>
+            <li>High-efficiency SOEC stack with simultaneous steam supply to both electrodes (KETEP International Joint R&amp;D)<span class="y">2025-2026</span></li>
+            <li>Optimal bipolar plate flow channels to suppress SOEC steam-electrode degradation (NRF H2GATHER)<span class="y">2025-2026</span></li>
+            <li>Start-up and AI-based health management of ammonia SOFC systems (KIMM ACE)<span class="y">2026</span></li>
+            <li>Multiphysics numerical model for water electrolysis (POSCO Holdings)<span class="y">2023</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Awards</h3>
+          <ul>
+            <li>Best Paper Award, Korean Hydrogen &amp; New Energy Society<span class="y">2023, 2025</span></li>
+            <li>Best Paper Award, School of Mechanical Engineering, Yonsei Univ.<span class="y">2018</span></li>
+            <li>Best Doctoral Paper, Graduate School of Yonsei Univ.<span class="y">2018</span></li>
+            <li>Best Paper Award, Korean Ceramic Society<span class="y">2025</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Expertise</h3>
+          <ul>
+            <li>Fundamental 3D numerical simulation</li>
+            <li>Multiphysics reacting-flow phenomena (CFD)</li>
+            <li>SOC stack design (bipolar plate, stacking)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Papers &amp; Patents</h3>
+          <ul>
+            <li>SCI(E) papers: 9 first/corresponding, 19 co-authored</li>
+            <li>Registered patents: 12 (KR 7, US 3, JP 2)</li>
+            <li>Patent applications: KR 15, PCT 2</li>
+            <li>Technology transfer: 4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section id="publications" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Publications</div>
+      <h2>Publications</h2>
+      <p>29 international and 15 domestic journal papers. <b>Y.G. Bae</b> in bold; * marks the corresponding author.</p>
+    </div>
+    <div class="pub-tools" id="pubTools">
+      <button class="on" data-f="all">All</button>
+      <button data-f="intl">International</button>
+      <button data-f="dom">Domestic</button>
+      <button data-f="main">First/Corresponding</button>
+      <button data-f="2026">2026</button>
+      <button data-f="2025">2025</button>
+      <button data-f="2024">2024</button>
+      <button data-f="2023">2023</button>
+      <button data-f="old">2022 and earlier</button>
+    </div>
+    <ol class="pubs" id="pubList"></ol>
+    <p class="note">Full list: <a href="https://scholar.google.com/citations?user=d5M6UBwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>, <a href="https://orcid.org/0000-0002-4394-3194" target="_blank" rel="noopener">ORCID</a></p>
+  </div>
+</section>
+
+<!-- ================= NETWORK & TEACHING ================= -->
+<section id="network">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Network &amp; Teaching</div>
+      <h2>Collaboration and Teaching</h2>
+    </div>
+    <div class="two">
+      <div class="box">
+        <h3>Research Network</h3>
+        <dl>
+          <dt>University</dt>
+          <dd>Korea: Yonsei, Korea Univ., KENTECH, Incheon National Univ.<br>Abroad: University of Toronto, Stanford, KIT</dd>
+          <dt>National Lab.</dt>
+          <dd>Korea: KIMM, KIER, KIMS, KICET<br>Abroad: NRCan, DLR, KIST Europe</dd>
+          <dt>Industry</dt>
+          <dd>HD Group, Samsung Group</dd>
+        </dl>
+        <p class="note">We handle computation, modeling, and design together with partner labs in experiments, materials, and synthesis, and we are extending our work to batteries, e-fuels, and the space industry.</p>
+      </div>
+      <div class="box">
+        <h3>Teaching</h3>
+        <div class="chips">
+          <span>MATLAB/Python for Mechanical Engineers</span><span>Thermodynamics</span><span>Fluid Dynamics</span><span>Heat Transfer</span>
+          <span>Combustion and Fuel Cells</span><span>Energy Conversion Engineering</span><span>Renewable Energy</span>
+        </div>
+        <div class="tiers">
+          <div><b>Tier 1. Physics</b>Fundamental physics, basic modeling</div>
+          <div><b>Tier 2. CFD</b>Multiphysics CFD, simulation and analysis</div>
+          <div><b>Tier 3. Device</b>Device design and implementation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEMBERS ================= -->
+<section id="members" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Members</div>
+      <h2>Members</h2>
+    </div>
+    <div class="members">
+      <div class="mem">
+        <div class="ph"><img src="assets/img/pi.jpg" alt="Prof. Yonggyun Bae"></div>
+        <b>Yonggyun Bae</b><span>Principal Investigator</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>M.S./Ph.D. students</b><span>Recruiting</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>Integrated M.S.-Ph.D.</b><span>Recruiting</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>Undergraduate interns</b><span>Recruiting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOIN ================= -->
+<section id="join">
+  <div class="wrap">
+    <div class="join">
+      <div>
+        <h2>Join IMSL</h2>
+        <p>We are recruiting graduate students (M.S., Ph.D., integrated M.S.-Ph.D.) and undergraduate research interns.</p>
+        <p>Students interested in thermal-fluid engineering, CFD, hydrogen and fuel cells, or AI are welcome regardless of their background.</p>
+        <ul>
+          <li>Multiphysics CFD with Ansys Fluent and programming in Python/MATLAB</li>
+          <li>Design projects on real energy devices such as SOFC/SOEC and batteries</li>
+          <li>Joint research with institutes and companies in Korea and abroad, and presentations at international conferences</li>
+        </ul>
+      </div>
+      <div class="side">
+        <h3>Career Pathways</h3>
+        <p>We support career paths through our industry-academia network, including government research institutes such as KIMM, HD Group, and Samsung Group.</p>
+        <h3 style="margin-top:18px">How to apply</h3>
+        <p>Send your CV and a short statement of your research interests to <a href="mailto:ygbae@dgu.ac.kr" style="color:#ffb37a">ygbae@dgu.ac.kr</a>.</p>
+        <a class="btn primary" href="#contact" style="margin-top:10px">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Contact</div>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact">
+      <div class="box">
+        <h3>Intelligent Multiphysics Systems Laboratory</h3>
+        <p>Department of Mechanical, Robotics and Energy Engineering, Dongguk University</p>
+        <p>Manhae Hall B103, 30 Pil-dong-ro 1-gil, Jung-gu, Seoul 04620, Republic of Korea</p>
+        <p>Email: <a href="mailto:ygbae@dgu.ac.kr">ygbae@dgu.ac.kr</a></p>
+        <p>Tel: +82-2-2260-3705</p>
+        <p>ORCID: <a href="https://orcid.org/0000-0002-4394-3194" target="_blank" rel="noopener">0000-0002-4394-3194</a></p>
+      </div>
+      <div class="box">
+        <h3>Research Keywords</h3>
+        <div class="chips">
+          <span>Multiphysics CFD</span><span>SOFC</span><span>SOEC</span><span>NH<sub>3</sub> fuel cell</span>
+          <span>Green hydrogen</span><span>Reacting flow</span><span>Reaction kinetics</span><span>Stack design</span>
+          <span>Bayesian optimization</span><span>PINN</span><span>Battery safety</span><span>Mars ISRU</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Intelligent Multiphysics Systems Laboratory, Dongguk University</span>
+    <span>From Physics to Innovation</span>
+  </div>
+</footer>
+
+<script src="assets/data/cv.js?v=350e2451"></script>
+<script src="assets/site.js?v=b0ad9161"></script>
+</body>
+</html>
