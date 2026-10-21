@@ -41,6 +41,21 @@
     });
   }
 
+  // Add a year button for any newer year that has no button yet (e.g. 2027)
+  const yearBtns = [...document.querySelectorAll("#pubTools button")].filter(b => /^\d{4}$/.test(b.dataset.f));
+  if (yearBtns.length) {
+    const have = new Set(yearBtns.map(b => b.dataset.f));
+    const top = Math.max(...yearBtns.map(b => +b.dataset.f));
+    [...new Set(PUBS.map(p => p.year))].filter(y => y > top).sort((a, b) => a - b).forEach(y => {
+      if (have.has(String(y))) return;
+      const nb = document.createElement("button");
+      nb.dataset.f = String(y);
+      nb.textContent = String(y);
+      yearBtns[0].before(nb);
+      yearBtns.unshift(nb);
+    });
+  }
+
   // Count next to each filter button (main also shows the international/domestic split)
   const match = (p, f) => f === "all" || (f === "main" && p.main) || f === p.kind ||
                           (f === "old" && p.year <= 2022) || String(p.year) === f;

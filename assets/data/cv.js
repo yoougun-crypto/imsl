@@ -7,6 +7,28 @@ window.CV = {
  "pubs": [
   {
    "kind": "intl",
+   "authors": "T.Q. Quach, J.Y. Park, D.K. Lee, A.D. Nguyen, T. Bui, Y.S. Kim, Y.G. Bae*",
+   "title": "Degradation-aware optimization of SOFC operating strategies under off-design balance-of-plant dynamics",
+   "journal": "Applied Energy",
+   "volume": "427",
+   "pages": "129087",
+   "year": 2027,
+   "main": true,
+   "doi": "10.1016/j.apenergy.2026.129087"
+  },
+  {
+   "kind": "intl",
+   "authors": "D.K. Lee, S.H. Lee, J.Y. Park, T. Morosuk, Y.G. Bae, Y.S. Kim",
+   "title": "Dynamic start-up and operating window analysis of an ammonia-fueled SOFC system with flexible cracking ratio operation",
+   "journal": "Applied Energy",
+   "volume": "427",
+   "pages": "129107",
+   "year": 2027,
+   "main": false,
+   "doi": "10.1016/j.apenergy.2026.129107"
+  },
+  {
+   "kind": "intl",
    "authors": "A.D. Nguyen, J.Y. Park, Y.G. Bae, D.K. Lee, Y.S. Kim",
    "title": "A 20 kW solid oxide electrolysis cell system with hydrogen recirculation: operational performance and thermodynamic evaluation",
    "journal": "Energy Conversion and Management",
