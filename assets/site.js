@@ -6,6 +6,15 @@
     en: { main: "First/Corr.", papers: n => `${n} paper${n === 1 ? "" : "s"}`, jump: "Jump to year" },
   }[lang];
 
+  // Old single-page links (e.g. index.html#publications) -> the section's own page
+  const MOVED = { research: "research", highlights: "research", vision: "research", pi: "pi", network: "pi",
+                  publications: "publications", members: "members", join: "join", contact: "contact" };
+  const h = location.hash.slice(1);
+  if (MOVED[h] && document.getElementById(h) === null) {
+    location.replace(MOVED[h] + (lang === "ko" ? "-ko" : "") + ".html");
+    return;
+  }
+
   // Language switch keeps the current section (#hash).
   document.querySelectorAll(".lang a").forEach(a => {
     a.addEventListener("click", e => {
