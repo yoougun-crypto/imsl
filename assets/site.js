@@ -1,9 +1,9 @@
-// Shared page script for index.html (ko) and en.html (en).
+// Shared page script for index.html (en, default) and ko.html (ko).
 (function () {
-  const lang = document.documentElement.lang === "en" ? "en" : "ko";
+  const lang = document.documentElement.lang === "ko" ? "ko" : "en";
   const L = {
-    ko: { main: "주저자", dom: "국내" },
-    en: { main: "First/Corr.", dom: "Domestic" },
+    ko: { main: "주저자", papers: n => `${n}편`, jump: "연도로 이동" },
+    en: { main: "First/Corr.", papers: n => `${n} paper${n === 1 ? "" : "s"}`, jump: "Jump to year" },
   }[lang];
 
   // Language switch keeps the current section (#hash).
@@ -20,64 +20,55 @@
   if (!list || !window.CV) return;
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const boldMe = a => window.CV.citeNames.reduce((s, n) => s.split(esc(n)).join(`<b>${esc(n)}</b>`), esc(a));
-  const PUBS = window.CV.pubs;
+  const PUBS = window.CV.pubs.map((p, i, all) => ({ ...p, no: all.length - i }));  // fixed numbers
+  const years = [...new Set(PUBS.map(p => p.year))].sort((a, b) => b - a);
+
+  document.querySelectorAll(".pub-count").forEach(el => { el.textContent = PUBS.length; });
+
+  const tools = document.getElementById("pubTools");
+  const jump = document.createElement("nav");
+  jump.className = "year-jump";
+  jump.setAttribute("aria-label", L.jump);
+  tools.after(jump);
+
+  function item(p) {
+    const src = [p.volume, p.pages].filter(Boolean).join(", ");
+    return `<li><span class="no">[${p.no}]</span><span>` +
+      `<span class="t">${esc(p.title)}</span>` +
+      `<span class="a">${boldMe(p.authors)}</span>` +
+      `<span class="j">${esc(p.journal)}</span>${src ? `<span class="v">, ${esc(src)}</span>` : ""}` +
+      (p.main ? `<span class="badge main">${L.main}</span>` : "") +
+      (p.doi ? ` <a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">DOI</a>` : "") +
+      `</span></li>`;
+  }
 
   function render(f) {
-    list.innerHTML = "";
-    const rows = PUBS.filter(p => match(p, f));
-    rows.forEach((p, i) => {
-      const src = [p.volume, p.pages].filter(Boolean).join(", ");
-      const li = document.createElement("li");
-      li.innerHTML =
-        `<span class="no">[${rows.length - i}]</span>` +
-        `<span><span class="t">${esc(p.title)}</span>` +
-        `<span class="a">${boldMe(p.authors)}</span>` +
-        `<span class="j">${esc(p.journal)}</span>${src ? `<span class="v">, ${esc(src)}</span>` : ""}` +
-        (p.main ? `<span class="badge main">${L.main}</span>` : "") +
-        (p.kind === "dom" ? `<span class="badge rev">${L.dom}</span>` : "") +
-        (p.doi ? ` <a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">DOI</a>` : "") +
-        `</span><span class="yr">${p.year}</span>`;
-      list.appendChild(li);
+    const rows = PUBS.filter(p => f !== "main" || p.main);
+    const html = [], links = [];
+    years.forEach(y => {
+      const ps = rows.filter(p => p.year === y);
+      if (!ps.length) return;
+      html.push(`<div class="py" id="y${y}"><div class="py-head"><span class="py-year">${y}</span>` +
+                `<span class="py-n">${L.papers(ps.length)}</span></div><ol class="pubs">${ps.map(item).join("")}</ol></div>`);
+      links.push(`<a href="#y${y}">${y}<span>${ps.length}</span></a>`);
     });
+    list.innerHTML = html.join("");
+    jump.innerHTML = links.join("");
   }
 
-  // Add a year button for any newer year that has no button yet (e.g. 2027)
-  const yearBtns = [...document.querySelectorAll("#pubTools button")].filter(b => /^\d{4}$/.test(b.dataset.f));
-  if (yearBtns.length) {
-    const have = new Set(yearBtns.map(b => b.dataset.f));
-    const top = Math.max(...yearBtns.map(b => +b.dataset.f));
-    [...new Set(PUBS.map(p => p.year))].filter(y => y > top).sort((a, b) => a - b).forEach(y => {
-      if (have.has(String(y))) return;
-      const nb = document.createElement("button");
-      nb.dataset.f = String(y);
-      nb.textContent = String(y);
-      yearBtns[0].before(nb);
-      yearBtns.unshift(nb);
-    });
-  }
-
-  // Count next to each filter button (main also shows the international/domestic split)
-  const match = (p, f) => f === "all" || (f === "main" && p.main) || f === p.kind ||
-                          (f === "old" && p.year <= 2022) || String(p.year) === f;
-  const split = lang === "en" ? ["Intl", "Dom"] : ["국제", "국내"];
-  document.querySelectorAll("#pubTools button").forEach(b => {
-    const f = b.dataset.f;
-    const rows = PUBS.filter(p => match(p, f));
-    let txt = String(rows.length);
-    if (f === "main") {
-      const intl = rows.filter(p => p.kind === "intl").length;
-      txt += ` (${split[0]} ${intl}, ${split[1]} ${rows.length - intl})`;
-    }
+  // Count next to each filter button
+  tools.querySelectorAll("button").forEach(b => {
+    const n = PUBS.filter(p => b.dataset.f !== "main" || p.main).length;
     const c = document.createElement("span");
     c.className = "cnt";
-    c.textContent = txt;
+    c.textContent = String(n);
     b.appendChild(c);
   });
 
-  document.getElementById("pubTools").addEventListener("click", e => {
+  tools.addEventListener("click", e => {
     const b = e.target.closest("button");
     if (!b || !b.dataset.f) return;
-    document.querySelectorAll("#pubTools button").forEach(x => x.classList.remove("on"));
+    tools.querySelectorAll("button").forEach(x => x.classList.remove("on"));
     b.classList.add("on");
     render(b.dataset.f);
   });

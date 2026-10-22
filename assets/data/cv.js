@@ -160,28 +160,6 @@ window.CV = {
    "doi": "10.1016/j.energy.2025.137186"
   },
   {
-   "kind": "dom",
-   "authors": "D.K. Lee, T.Q. Quach, A.D. Nguyen, J.Y. Park, Y.G. Bae, Y.S. Kim*",
-   "title": "Integrating LLM and Multioutput Logistic Regression for HAZOP Prediction",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "36(6)",
-   "pages": "714-723",
-   "year": 2025,
-   "main": false,
-   "doi": "10.7316/jhne.2025.36.6.714"
-  },
-  {
-   "kind": "dom",
-   "authors": "W.C. Shin, D.K. Lee, J.Y. Park, Y.S. Kim, S.Y. Lee, Y.G. Bae*",
-   "title": "Operation Strategy of Pressurized Solid Oxide Fuel Cell System Fueled by Ammonia",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "36(5)",
-   "pages": "535-541",
-   "year": 2025,
-   "main": true,
-   "doi": "10.7316/jhne.2025.36.5.535"
-  },
-  {
    "kind": "intl",
    "authors": "W. Lee, Y.G. Bae, S. Lee, J. Hong*",
    "title": "Elucidating the dynamic transport phenomena of solid oxide fuel cells according to rapid electrical load change operation",
@@ -202,50 +180,6 @@ window.CV = {
    "year": 2024,
    "main": false,
    "doi": "10.1115/1.4065210"
-  },
-  {
-   "kind": "dom",
-   "authors": "T. Bui, J.Y. Park*, D.K. Lee, Y.G. Bae, Y.S. Kim, S.M. Lee",
-   "title": "Fuel Cell-based Tri-generation System Operating Strategy for Horticulture",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "35(6)",
-   "pages": "",
-   "year": 2024,
-   "main": false,
-   "doi": "10.7316/jhne.2024.35.6.690"
-  },
-  {
-   "kind": "dom",
-   "authors": "K.Y. Lee, D.H. Chung, Y.G. Bae, J.M. Bae*",
-   "title": "Catalyst Infiltration on Anode of SOFC for Direct Utilization of Ammonia",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "35(6)",
-   "pages": "667-672",
-   "year": 2024,
-   "main": false,
-   "doi": "10.7316/jhne.2024.35.6.667"
-  },
-  {
-   "kind": "dom",
-   "authors": "Y.G. Bae*, T.Q. Quach, D.K. Lee, J.Y. Park, Y.S. Kim, S.Y. Lee",
-   "title": "Development of NH3-Fed Solid Oxide Fuel Cell Stack by KIMM",
-   "journal": "Trans. of the Korean Society of Mechanical Engineers B",
-   "volume": "48(12)",
-   "pages": "",
-   "year": 2024,
-   "main": true,
-   "doi": "10.3795/ksme-b.2024.48.12.817"
-  },
-  {
-   "kind": "dom",
-   "authors": "J.Y. Park*, T.Q. Quach, J.S. Kim, Y.G. Bae, D.K. Lee, Y.S. Kim, S.Y. Lee, Y. Kim",
-   "title": "Ammonia-fueled Solid Oxide Fuel Cell Recirculation Systems for Power Generation",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "35(1)",
-   "pages": "40-47",
-   "year": 2024,
-   "main": false,
-   "doi": "10.7316/jhne.2024.35.1.40"
   },
   {
    "kind": "intl",
@@ -281,50 +215,6 @@ window.CV = {
    "doi": "10.1016/j.cej.2023.142334"
   },
   {
-   "kind": "dom",
-   "authors": "J.Y. Park*, T. Bui, S.Y. Park, D.K. Lee, Y.G. Bae, Y.S. Kim, S.M. Lee",
-   "title": "Fuel Cell-based Cogeneration System for Greenhouse Cooling and Heating",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "34(6)",
-   "pages": "667-672",
-   "year": 2023,
-   "main": false,
-   "doi": "10.7316/jhne.2023.34.6.667"
-  },
-  {
-   "kind": "dom",
-   "authors": "T.Q. Quach, Y.G. Bae, K.Y. Ahn, S.Y. Lee, Y.S. Kim*",
-   "title": "Exergetic Analysis of Ammonia-fueled Solid Oxide Fuel Cell Systems for Power Generation",
-   "journal": "Journal of the Korean Institute of Gas",
-   "volume": "27(3)",
-   "pages": "27",
-   "year": 2023,
-   "main": false,
-   "doi": ""
-  },
-  {
-   "kind": "dom",
-   "authors": "T.H. Kim, D.Y. Kim, D.K. Lee, Y.S. Kim, K.Y. Ahn, Y.G. Bae, J.Y. Park, Y. Kim",
-   "title": "Study on thermodynamic performance of electrochemical hydrogen compressor",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "34(2)",
-   "pages": "141-148",
-   "year": 2023,
-   "main": false,
-   "doi": "10.7316/jhne.2023.34.2.141"
-  },
-  {
-   "kind": "dom",
-   "authors": "D.Y. Kim, T.H. Kim, D.K. Lee, Y.S. Kim, K.Y. Ahn, Y.G. Bae, J.Y. Park, Y. Kim",
-   "title": "Study on Electrochemical Hydrogen Separation of Hydrogen and Nitrogen Mixture Gas",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "34(2)",
-   "pages": "149-154",
-   "year": 2023,
-   "main": false,
-   "doi": "10.7316/jhne.2023.34.2.149"
-  },
-  {
    "kind": "intl",
    "authors": "D.K. Lee, T.Q. Quach, T.P. Israel, K.Y. Ahn, Y.G. Bae, Y.S. Kim*",
    "title": "Analysis of start-up behavior based on the dynamic simulation of an SOFC-engine hybrid system",
@@ -356,50 +246,6 @@ window.CV = {
    "year": 2022,
    "main": false,
    "doi": "10.1002/er.7923"
-  },
-  {
-   "kind": "dom",
-   "authors": "D.K. Lee, T.P. Israel, Y.G. Bae, Y.S. Kim*, K.Y. Ahn, S.Y. Lee",
-   "title": "Analysis of levelized cost of electricity for type of stationary fuel cells",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "33(6)",
-   "pages": "643-659",
-   "year": 2022,
-   "main": false,
-   "doi": "10.7316/khnes.2022.33.6.643"
-  },
-  {
-   "kind": "dom",
-   "authors": "V.T. Giap, T.Q. Quach, K.Y. Ahn, Y.G. Bae, S.Y. Lee, Y.S. Kim*",
-   "title": "1D kinetics model of NH3-fed solid oxide fuel cell",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "33(6)",
-   "pages": "723-732",
-   "year": 2022,
-   "main": false,
-   "doi": "10.7316/khnes.2022.33.6.723"
-  },
-  {
-   "kind": "dom",
-   "authors": "T.Q. Quach, V.T. Giap, D.K. Lee, S.Y. Lee, Y.G. Bae, K.Y. Ahn, Y.S. Kim*",
-   "title": "Performance analysis of ammonia-fed solid oxide fuel cell using alternating flow",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "33(5)",
-   "pages": "557-565",
-   "year": 2022,
-   "main": false,
-   "doi": "10.7316/khnes.2022.33.5.557"
-  },
-  {
-   "kind": "dom",
-   "authors": "T. Bui, Y.S. Kim*, D.K. Lee, K.Y. Ahn, Y.G. Bae, S.M. Lee",
-   "title": "Economic Analysis and Comparison between Low-Power and High-Power SOEC Systems",
-   "journal": "Trans. of the Korean Hydrogen and New Energy Society",
-   "volume": "33(6)",
-   "pages": "707-714",
-   "year": 2022,
-   "main": false,
-   "doi": "10.7316/khnes.2022.33.6.707"
   },
   {
    "kind": "intl",
@@ -499,17 +345,6 @@ window.CV = {
    "year": 2018,
    "main": true,
    "doi": "10.1038/s41598-018-23134-7"
-  },
-  {
-   "kind": "dom",
-   "authors": "Y.G. Bae, D.H. Kim, S.T. Hwang, Y.J. Moon*",
-   "title": "Three-dimensional flow computation and performance characteristics analysis of propellers for water treatment mixer",
-   "journal": "Journal of Computational Fluids Engineering",
-   "volume": "20(1)",
-   "pages": "10-15",
-   "year": 2015,
-   "main": true,
-   "doi": "10.6112/kscfe.2015.20.1.010"
   }
  ]
 };

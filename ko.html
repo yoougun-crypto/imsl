@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>IMSL | 지능형 다중물리 시스템 연구실</title>
+<meta content="동국대학교 기계로봇에너지공학과 지능형 다중물리 시스템 연구실(IMSL). Multiphysics CFD와 AI로 SOFC/SOEC 등 에너지 변환 장치를 설계합니다." name="description"/>
+<link href="ko.html" hreflang="ko" rel="alternate"/>
+<link href="index.html" hreflang="en" rel="alternate"/>
+<link href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css" rel="stylesheet"/>
+<link href="style.css?v=a76324cb" rel="stylesheet"/>
+</head>
+<body>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="#top">
+<img alt="IMSL 로고" src="assets/img/logo_mark.png"/>
+<span>지능형 다중물리 시스템 연구실<small>Dongguk University</small></span>
+</a>
+<div class="head-right">
+<nav class="main">
+<ul onclick="this.parentNode.classList.remove('open')">
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#pi">PI</a></li>
+<li><a href="assets/cv/CV_YonggyunBae_KO.pdf" rel="noopener" target="_blank">CV</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#members">Members</a></li>
+<li><a href="#join">Join Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div aria-label="언어 선택" class="lang">
+<a aria-current="true" class="on" href="ko.html" hreflang="ko" lang="ko">한국어</a>
+<a href="index.html" hreflang="en" lang="en">English</a>
+</div>
+<button aria-label="메뉴 열기" class="menu-btn" onclick="document.querySelector('nav.main').classList.toggle('open')">☰</button>
+</div>
+</div>
+</header>
+<!-- ================= HERO ================= -->
+<div class="hero" id="top" style="background: linear-gradient(100deg, rgba(8, 30, 56, 0.92) 0%, rgba(8, 30, 56, 0.72) 45%, rgba(8, 30, 56, 0.25) 100%), url('assets/img/hero.jpg') center/cover no-repeat;">
+<div class="wrap">
+<div class="eyebrow">Dongguk University | Mechanical, Robotics and Energy Engineering</div>
+<h1>Intelligent Multiphysics<br/>Systems Laboratory</h1>
+<div class="ko">지능형 다중물리 시스템 연구실</div>
+<p class="tagline">Integrate Physics. Empower Design.<br/> Multiphysics CFD for Energy Systems: from fundamental modeling to AI-driven design</p>
+<div class="btns">
+<a class="btn primary" href="#research">연구 분야 보기</a>
+<a class="btn ghost" href="#join">대학원생 모집</a>
+</div>
+</div>
+</div>
+<!-- ================= ABOUT ================= -->
+<section id="about">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">About IMSL</div>
+<h2>물리를 이해하고, 정량적으로 모델링하고, 설계로 연결합니다</h2>
+<p>에너지 변환 장치는 반응, 열, 유동, 전기가 동시에 얽혀 있는 시스템입니다. 반응만 보거나 유동만 보아서는 실제 성능을 예측할 수 없습니다. IMSL은 다중물리(Multiphysics) CFD로 이 현상들을 함께 풀어 내고, AI와 결합해 SOFC/SOEC 스택과 같은 차세대 수소, 무탄소 발전 장치를 설계합니다.</p>
+</div>
+<p class="quote">"Understand the Fundamental Physics, Model it Quantitatively, and Translate it into Engineering Design"</p>
+<div class="flow">
+<div class="step">
+<h3>Physics understanding</h3>
+<ul><li>지배방정식 정립</li><li>질량/화학종, 운동량</li><li>에너지, 반응</li></ul>
+</div>
+<div class="step">
+<h3>Quantitative CFD modeling</h3>
+<ul><li>CAD, 해석 영역</li><li>격자 생성</li><li>초기/경계조건</li></ul>
+</div>
+<div class="step">
+<h3>Design & optimization</h3>
+<ul><li>속도장, 온도장, 반응장</li><li>운전 맵 도출</li><li>AI 기반 최적화</li></ul>
+</div>
+<div class="step">
+<h3>Prototyping</h3>
+<ul><li>제작 및 실험 검증</li><li>성능 평가</li><li>데이터베이스 구축</li></ul>
+</div>
+</div>
+<div class="physics-tags">
+<span class="tag">Fluid flow</span><span class="tag">Heat transfer</span><span class="tag">Mass transfer</span>
+<span class="tag">Surface / thermochemical reaction</span><span class="tag">Electrochemistry</span><span class="tag">AI / surrogate model</span>
+</div>
+<div class="stats">
+<div class="stat"><b>30</b><span>SCI(E) 논문 (주저자 10, 공저 20)</span></div>
+<div class="stat"><b>12</b><span>등록 특허 (국내 7, 미국 3, 일본 2)</span></div>
+<div class="stat"><b>4</b><span>기술이전</span></div>
+<div class="stat"><b>4</b><span>연구책임 과제</span></div>
+</div>
+</div>
+</section>
+<!-- ================= RESEARCH ================= -->
+<section class="soft" id="research">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Research</div>
+<h2>연구 분야</h2>
+<p>일관된 CFD 방법론 위에서 다루는 물리를 확장해 왔습니다. 유체역학에서 표면반응, 전기화학, 그리고 AI 통합 설계로 이어집니다.</p>
+</div>
+<div class="research-grid">
+<article class="rcard">
+<div class="img"><img alt="SOFC 스택 셀별 온도 분포" src="assets/img/r_stack_temp.png"/></div>
+<div class="body">
+<div class="num">01</div>
+<h3>Multiphysics CFD for SOFC/SOEC</h3>
+<div class="sub">고체산화물 연료전지/전해전지 3차원 다중물리 해석</div>
+<ul>
+<li>질량, 운동량, 에너지, 전하, 반응을 연성한 고정밀 3D 모델 (Ansys Fluent + UDF)</li>
+<li>단일 채널(1 cm x 10 cm)부터 상용 셀(15 x 15 cm<sup>2</sup>), 스택(15 x 15 x 25 cm<sup>3</sup>)까지</li>
+<li>부하 변동 시 과도(transient) 열/전기화학 거동 해석</li>
+<li>열저항, 유동저항 제어를 통한 분리판(BP)/매니폴드 설계</li>
+</ul>
+<div class="kpi"><span>온도 편차 65% 감소</span><span>유량 편차 60% 감소</span><span>스택 ΔT 66 -> 45 °C</span></div>
+</div>
+</article>
+<article class="rcard">
+<div class="img"><img alt="촉매 반응기 내부의 물질 전달과 표면 반응 개념도" src="assets/img/r_reacting_flow.png"/></div>
+<div class="body">
+<div class="num">02</div>
+<h3>Reacting Flow & Reaction Kinetics</h3>
+<div class="sub">표면반응 유동 해석과 반응 메커니즘 도출</div>
+<ul>
+<li>유동 + 표면반응 2D 모델, CH<sub>4</sub> 개질 촉매 반응기 해석</li>
+<li>유전 알고리즘(GA)을 이용한 표면반응 메커니즘 자동 최적화</li>
+<li>In-situ XPS, FT-IR, DFT 계산과 연계한 반응 경로 규명</li>
+<li>GC/MS 잔류가스 분석(RGA)으로 실험 검증</li>
+</ul>
+<div class="kpi"><span>Micro-kinetics</span><span>Genetic algorithm</span><span>Catalytic reactor</span></div>
+</div>
+</article>
+<article class="rcard">
+<div class="img"><img alt="AI와 CFD 통합 스택 해석" src="assets/img/r_aicfd.jpg"/></div>
+<div class="body">
+<div class="num">03</div>
+<h3>AI-CFD Integrated Design</h3>
+<div class="sub">AI와 CFD를 결합한 다목적 최적 설계</div>
+<ul>
+<li>베이지안 최적화와 능동학습(active learning)으로 CFD 계산 비용 절감</li>
+<li>가우시안 프로세스(GP) 다목적 대리모델, ε-PAL 기반 Pareto 탐색</li>
+<li>SOEC 운전조건 최적화: 온도 구배(ΔT)는 줄이고 효율(η)은 높이기</li>
+<li>PINN(Physics-Informed Neural Network) 기반 스택 설계 플랫폼</li>
+</ul>
+<div class="kpi"><span>Bayesian optimization</span><span>Surrogate model</span><span>PINN</span></div>
+</div>
+</article>
+<article class="rcard">
+<div class="img"><img alt="자체 제작한 1 kW NH3-SOFC 스택" src="assets/img/r_stack_photo.jpg"/></div>
+<div class="body">
+<div class="num">04</div>
+<h3>Stack & System for Green H<sub>2</sub></h3>
+<div class="sub">NH<sub>3</sub>-SOFC, SOEC 스택 제작과 시스템 해석</div>
+<ul>
+<li>1 kW급 NH<sub>3</sub>-SOFC 풀스택(40셀) 자체 제작 및 장기 운전 검증</li>
+<li>가압(3 bar) NH<sub>3</sub>-SOFC 전기/수소 동시 생산 시스템</li>
+<li>Internal cascade 스택으로 연료 이용률 극대화</li>
+<li>공기극 스팀 sweep gas를 적용한 차세대 SOEC</li>
+</ul>
+<div class="kpi"><span>셀 전압 편차 31 mV</span><span>총 효율 88.1%</span><span>스택 FU 93.75%</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ================= HIGHLIGHTS ================= -->
+<section id="highlights">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Highlights</div>
+<h2>주요 연구 성과</h2>
+<p>"CFD is a tool for solving real problems." 해석에서 끝나지 않고 설계, 제작, 검증, 기술이전까지 연결합니다.</p>
+</div>
+<div class="hl-grid">
+<div class="hl">
+<div class="img"><img alt="스택 온도차 감소" src="assets/img/c_dT.png"/></div>
+<div class="cap"><b>NH<sub>3</sub>-SOFC 스택 설계 최적화</b>
+<p>Dual alternative cross-flow 설계로 스택 내부 온도차를 66 °C에서 45 °C로 31.8% 줄였습니다. (Energy Conversion and Management, 2023)</p></div>
+</div>
+<div class="hl">
+<div class="img"><img alt="정렬 가이드를 적용한 스택 조립 도면" src="assets/img/h_stack_alignment.png"/></div>
+<div class="cap"><b>스택 적층 기술 개선</b>
+<p>분리판 표면 거칠기, 실링, 정렬 가이드를 개선해 5셀 스택의 셀 간 전압 편차를 0.36 V에서 0.045 V로 줄이고 출력을 23.3% 높였습니다.</p></div>
+</div>
+<div class="hl">
+<div class="img"><img alt="가압 NH3-SOFC 전기/수소 동시 생산 시스템 개념도" src="assets/img/h_pressurized_system.png"/></div>
+<div class="cap"><b>가압 NH<sub>3</sub>-SOFC 전기/수소 동시 생산</b>
+<p>3 bar 가압 챔버에서 운전하여 전기와 고순도 수소를 함께 생산하고, 총 효율 88.1%를 확인했습니다.</p></div>
+</div>
+<div class="hl">
+<div class="img"><img alt="AI-CFD 통합 최적화 흐름도" src="assets/img/c_aicfd.png"/></div>
+<div class="cap"><b>AI-CFD 통합 SOEC 운전조건 최적화</b>
+<p>CFD 결과를 능동학습으로 GP 대리모델에 추가하며 ΔT와 효율의 Pareto 최적점을 찾습니다. (Applied Thermal Engineering, 2026)</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= VISION ================= -->
+<section class="soft" id="vision">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Vision</div>
+<h2>연구 비전</h2>
+<p>CFD/AI 플랫폼을 기반으로 장치 안전성 설계, 그리고 우주 자원 활용까지 단계적으로 확장합니다.</p>
+</div>
+<div class="vision">
+<div class="vcard">
+<div class="top"><small>Short-term</small><b>CFD + AI Platform</b></div>
+<img alt="CFD AI 플랫폼" class="img-contain" src="assets/img/r_ai_flow.png"/>
+<ul><li>Physics-based AI (PINN)</li><li>무탄소 발전 (NH<sub>3</sub>-SOFC)</li><li>그린수소 생산 (SOEC)</li></ul>
+</div>
+<div class="vcard">
+<div class="top"><small>Mid-term</small><b>Safety-driven Design</b></div>
+<img alt="배터리 열전달 해석" class="img-contain" src="assets/img/r_battery.jpg"/>
+<ul><li>SOFC, SOEC, 배터리 안전성 예측</li><li>배터리 열폭주 해석</li><li>AI 기반 진단, 실험실과의 협업</li></ul>
+</div>
+<div class="vcard">
+<div class="top"><small>Long-term</small><b>Space Engineering</b></div>
+<img alt="화성 탐사 로버" src="assets/img/r_mars.jpg"/>
+<div class="credit">Image: NASA/JPL-Caltech</div>
+<ul><li>Mars ISRU (In-Situ Resource Utilization)</li><li>H<sub>2</sub>O/CO<sub>2</sub> 공전해</li><li>연료/산화제(CH<sub>4</sub> + O<sub>2</sub>) 현지 생산</li></ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PI ================= -->
+<section id="pi">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Principal Investigator</div>
+<h2>연구책임자</h2>
+</div>
+<div class="pi">
+<div>
+<div class="photo"><img alt="배용균 교수" src="assets/img/pi.jpg"/></div>
+<div class="name"><b>배용균</b><span>Yonggyun Bae, Ph.D.</span><span>조교수, 기계로봇에너지공학과</span></div>
+<div class="pi-links"><a href="https://scholar.google.com/citations?user=d5M6UBwAAAAJ" rel="noopener" target="_blank">Google Scholar</a><a href="https://orcid.org/0000-0002-4394-3194" rel="noopener" target="_blank">ORCID</a></div>
+<div class="cv-dl">
+<a class="btn primary" href="assets/cv/CV_YonggyunBae_EN.pdf" rel="noopener" target="_blank">CV (English)</a>
+<a class="btn outline" href="assets/cv/CV_YonggyunBae_KO.pdf" rel="noopener" target="_blank">이력서 (국문)</a>
+</div>
+</div>
+<div class="cv">
+<div>
+<h3>Education</h3>
+<ul>
+<li>Ph.D., Mechanical Engineering, Yonsei Univ.<span class="y">2021</span>
+<div class="sub">Advisor: Prof. Jongsup Hong</div></li>
+<li>M.S., Mechanical Engineering, Korea Univ.<span class="y">2016</span>
+<div class="sub">Advisor: Prof. Young J. Moon</div></li>
+<li>B.S., Mechanical Engineering, Korea Univ.<span class="y">2014</span></li>
+</ul>
+</div>
+<div>
+<h3>Professional Experience</h3>
+<ul>
+<li>Assistant Professor, 동국대학교 기계로봇에너지공학과<span class="y">2026-</span></li>
+<li>Senior Researcher, 한국기계연구원(KIMM)<span class="y">2022-2026</span></li>
+<li>Postdoctoral Researcher, Yonsei Univ.<span class="y">2021-2022</span></li>
+<li>Research Assistant, KIST<span class="y">2016-2018</span></li>
+<li>신재생에너지 전문가 자문위원, 서울특별시<span class="y">2025-2027</span></li>
+<li>신규과제 기획자문단 위원, 한국에너지기술평가원(KETEP)<span class="y">2025, 2026년 사업</span></li>
+</ul>
+</div>
+<div>
+<h3>Research Projects (P.I.)</h3>
+<ul>
+<li>양극/음극 동시 수증기 공급형 고효율 SOEC 스택 개발 (KETEP 국제공동연구)<span class="y">2025-2026</span></li>
+<li>SOEC 스팀극 열화 억제를 위한 분리판 유로 최적 설계 (NRF H2GATHER)<span class="y">2025-2026</span></li>
+<li>암모니아 SOFC 시스템 시동 및 AI 기반 건전성 기술 (KIMM ACE)<span class="y">2026</span></li>
+<li>수전해용 다중물리 전산해석 모델 개발 (POSCO Holdings)<span class="y">2023</span></li>
+</ul>
+</div>
+<div>
+<h3>Awards</h3>
+<ul>
+<li>Best Paper Award, 한국수소및신에너지학회(KHNES)<span class="y">2025</span></li>
+<li>Best Paper Award, 한국세라믹학회(KCerS)<span class="y">2025</span></li>
+<li>Best Paper Award, 한국수소및신에너지학회(KHNES)<span class="y">2023</span></li>
+<li>Best Paper Award, 연세대학교 기계공학부<span class="y">2018</span></li>
+<li>우수박사논문 표창, 연세대학교 대학원<span class="y">2018</span></li>
+</ul>
+</div>
+<div>
+<h3>Expertise</h3>
+<ul>
+<li>Fundamental 3D numerical simulation</li>
+<li>Multiphysics reacting-flow phenomena (CFD)</li>
+<li>SOC stack design (bipolar plate, stacking)</li>
+</ul>
+</div>
+<div>
+<h3>Papers & Patents</h3>
+<ul>
+<li>SCI(E) papers: 주저자 10, 공저 20</li>
+<li>Registered patents: 12 (KR 7, US 3, JP 2)</li>
+<li>Patent applications: KR 15, PCT 2</li>
+<li>Technology transfer: 4</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PUBLICATIONS ================= -->
+<section class="soft" id="publications">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Publications</div>
+<h2>논문</h2>
+<p>국제 저널 <span class="pub-count">31</span>편을 연도별로 정리했습니다. <b>Y.G. Bae</b>는 굵게, 교신저자는 *로 표시했습니다.</p>
+</div>
+<div class="pub-tools" id="pubTools">
+<button class="on" data-f="all">전체</button>
+<button data-f="main">주저자</button>
+</div>
+<div class="pubs-years" id="pubList"></div>
+<p class="note">* "주저자"는 제1저자 또는 교신저자 논문입니다. 전체 목록: <a href="https://scholar.google.com/citations?user=d5M6UBwAAAAJ" rel="noopener" target="_blank">Google Scholar</a>, <a href="https://orcid.org/0000-0002-4394-3194" rel="noopener" target="_blank">ORCID</a></p>
+</div>
+</section>
+<!-- ================= NETWORK & TEACHING ================= -->
+<section id="network">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Network & Teaching</div>
+<h2>협력 네트워크와 교육</h2>
+</div>
+<div class="two">
+<div class="box">
+<h3>Research Network</h3>
+<dl>
+<dt>University</dt>
+<dd>국내: 연세대, 고려대, KENTECH, 인천대<br/>해외: University of Toronto, Stanford, KIT</dd>
+<dt>National Lab.</dt>
+<dd>국내: KIMM, KIER, KIMS, KICET<br/>해외: NRCan, DLR, KIST Europe</dd>
+<dt>Industry</dt>
+<dd>HD그룹, 삼성그룹</dd>
+</dl>
+<p class="note">실험, 소재, 합성 분야 협력 연구실과 함께 계산, 모델링, 설계를 담당하며 배터리, e-fuel, 우주 산업으로 연구를 넓혀 갑니다.</p>
+</div>
+<div class="box">
+<h3>Teaching</h3>
+<div class="chips">
+<span>기계공학을 위한 MATLAB/Python</span><span>열역학</span><span>유체역학</span><span>열전달</span>
+<span>연소 및 연료전지</span><span>에너지변환공학</span><span>신재생에너지</span>
+</div>
+<div class="tiers">
+<div><b>Tier 1. Physics</b>기초 물리, 기본 모델링</div>
+<div><b>Tier 2. CFD</b>다중물리 CFD, 해석과 분석</div>
+<div><b>Tier 3. Device</b>장치 설계와 구현</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MEMBERS ================= -->
+<section class="soft" id="members">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Members</div>
+<h2>구성원</h2>
+</div>
+<div class="members">
+      <div class="mem">
+        <div class="ph"><img src="assets/img/pi.jpg" alt="배용균"></div>
+        <b>배용균</b><span>Principal Investigator</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>석사/박사과정</b><span>모집 중</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>석박사 통합과정</b><span>모집 중</span>
+      </div>
+      <div class="mem open">
+        <div class="ph">+</div>
+        <b>학부연구생</b><span>모집 중</span>
+      </div>
+    </div>
+</div>
+</section>
+<!-- ================= JOIN ================= -->
+<section id="join">
+<div class="wrap">
+<div class="join">
+<div>
+<h2>Join IMSL</h2>
+<p>대학원생(석사, 박사, 석박사 통합)과 학부연구생을 모집합니다.</p>
+<p>열유체, CFD, 수소/연료전지, AI에 관심 있는 학생이라면 전공 배경과 관계없이 환영합니다.</p>
+<ul>
+<li>Ansys Fluent 기반 다중물리 CFD와 Python/MATLAB 프로그래밍</li>
+<li>SOFC/SOEC, 배터리 등 실제 에너지 장치 설계 과제 참여</li>
+<li>국내외 연구기관, 기업과의 공동연구 및 국제학회 발표</li>
+</ul>
+</div>
+<div class="side">
+<h3>Career Pathways</h3>
+<p>한국기계연구원 등 정부출연연구소, HD그룹, 삼성그룹 등 산학 협력 네트워크를 통한 진로 연계를 지원합니다.</p>
+<h3 style="margin-top:18px">How to apply</h3>
+<p>CV와 간단한 자기소개(관심 분야)를 <a href="mailto:ygbae@dgu.ac.kr" style="color:#ffb37a">ygbae@dgu.ac.kr</a>로 보내 주세요.</p>
+<a class="btn primary" href="#contact" style="margin-top:10px">연락처 보기</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="soft" id="contact">
+<div class="wrap">
+<div class="sec-head">
+<div class="en">Contact</div>
+<h2>연락처</h2>
+</div>
+<div class="contact">
+<div class="box">
+<h3>Intelligent Multiphysics Systems Laboratory</h3>
+<p>동국대학교 기계로봇에너지공학과</p>
+<p>04620 서울특별시 중구 필동로1길 30 동국대학교 만해관 B103</p>
+<p>Email: <a href="mailto:ygbae@dgu.ac.kr">ygbae@dgu.ac.kr</a></p>
+<p>Tel: +82-2-2260-3705</p>
+<p>ORCID: <a href="https://orcid.org/0000-0002-4394-3194" rel="noopener" target="_blank">0000-0002-4394-3194</a></p>
+</div>
+<div class="box">
+<h3>Research Keywords</h3>
+<div class="chips">
+<span>Multiphysics CFD</span><span>SOFC</span><span>SOEC</span><span>NH<sub>3</sub> fuel cell</span>
+<span>Green hydrogen</span><span>Reacting flow</span><span>Reaction kinetics</span><span>Stack design</span>
+<span>Bayesian optimization</span><span>PINN</span><span>Battery safety</span><span>Mars ISRU</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<span>© 2026 Intelligent Multiphysics Systems Laboratory, Dongguk University</span>
+<span>From Physics to Innovation</span>
+</div>
+</footer>
+<script src="assets/data/cv.js?v=346c7a0e"></script>
+<script src="assets/site.js?v=5b676b15"></script>
+</body>
+</html>

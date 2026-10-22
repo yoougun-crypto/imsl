@@ -192,6 +192,20 @@ ol.pubs .yr { color: var(--muted); font-size: 14px; }
 .badge.rev { background: #eef2f7; color: var(--muted); }
 .note { font-size: 13px; color: var(--muted); margin-top: 16px; }
 
+/* publications grouped by year */
+.year-jump { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 28px; }
+.year-jump a { display: inline-flex; align-items: baseline; gap: 5px; padding: 5px 11px; border-radius: 8px;
+  background: #e8f1fb; color: var(--blue); font-weight: 700; font-size: 14px; }
+.year-jump a span { font-size: 12px; color: var(--muted); font-weight: 600; }
+.year-jump a:hover { text-decoration: none; background: #d7e7f8; }
+.pubs-years { display: flex; flex-direction: column; gap: 36px; }
+.py { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 28px; align-items: start; }
+.py-head { position: sticky; top: 84px; border-top: 3px solid var(--orange); padding-top: 10px; }
+.py-year { display: block; font-size: 34px; font-weight: 800; line-height: 1.1; color: var(--navy); font-variant-numeric: tabular-nums; }
+.py-n { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); }
+.py ol.pubs { border-top: 3px solid var(--navy); }
+.py ol.pubs li { grid-template-columns: 48px minmax(0, 1fr); }
+
 /* network / teaching */
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .box { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 26px; }
@@ -253,6 +267,10 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   .join { padding: 28px; }
 }
 @media (max-width: 520px) {
+  .py { grid-template-columns: 1fr; gap: 10px; }
+  .py-head { position: static; display: flex; align-items: baseline; gap: 10px; }
+  .py-year { font-size: 26px; }
+  .py ol.pubs li { grid-template-columns: 36px minmax(0, 1fr); }
   .brand span { display: none; }
   .wrap { padding: 0 16px; }
   .stats, .timeline, .members, .flow, .tiers { grid-template-columns: 1fr; }
