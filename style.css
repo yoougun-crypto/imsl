@@ -114,7 +114,7 @@ section.soft { background: var(--bg-soft); }
 /* research cards */
 .research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .rcard { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
-.rcard .img { background: #fff; height: 220px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--line); padding: 12px; }
+.rcard .img { background: #fff; height: 300px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--line); padding: 12px; }
 .rcard .img img { max-height: 100%; object-fit: contain; }
 .rcard .body { padding: 22px 24px 26px; }
 .rcard .num { color: var(--orange); font-weight: 800; font-size: 13px; letter-spacing: 1px; }
