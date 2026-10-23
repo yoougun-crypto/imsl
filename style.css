@@ -90,9 +90,10 @@ section.soft { background: var(--bg-soft); }
 
 /* stats */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 36px; }
-.stat { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; text-align: center; }
+.stat { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; text-align: center;
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; }
 .stat b { display: block; font-size: 34px; color: var(--navy); line-height: 1.1; }
-.stat span { color: var(--muted); font-size: 14px; }
+.stat span { color: var(--muted); font-size: 14px; line-height: 1.5; }
 
 /* philosophy flow */
 .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
@@ -185,7 +186,7 @@ ol.pubs li { display: grid; grid-template-columns: 48px 1fr auto; gap: 12px; ali
 ol.pubs .no { color: var(--muted); font-weight: 700; }
 ol.pubs .t { display: block; font-weight: 700; color: var(--navy); }
 ol.pubs .a { display: block; font-size: 14px; color: var(--muted); margin: 2px 0; }
-ol.pubs .a b { color: var(--ink); }
+ol.pubs .a b { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 ol.pubs .j { font-style: italic; }
 ol.pubs .v { color: var(--muted); }
 ol.pubs .yr { color: var(--muted); font-size: 14px; }
