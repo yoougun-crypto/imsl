@@ -306,3 +306,6 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   .ftile .cap b { font-size: 15px; }
   .ftile .cap span { font-size: 12.5px; }
 }
+.ftile .cap b { line-height: 1.3; }
+.ftile .cap > span { display: block; margin-top: 4px; line-height: 1.4; }
+.nw { white-space: nowrap; }
